@@ -40,7 +40,7 @@ form {
   }
   
   input:focus,
-  textarea:focus {
+  name:focus {
     /* Additional highlight for focused elements */
     border-color: #000;
   }
@@ -63,3 +63,51 @@ form {
        between the labels and their text fields */
     margin-left: .5em;
   }  
+  .siteheader
+{
+  position: sticky; 
+  top: 0;
+}
+#BodyImage
+{
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.pagefooter
+{
+  color: aliceblue;
+}
+.mainform
+{
+  color: whitesmoke;
+}
+#Copyright
+{
+  position: fixed;
+  right:0%;
+
+}
+.carousel-inner{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height : 600px;
+}
+.carousel{
+  position: right;
+  background-size: cover;
+}
+#home{
+  width: 100%;
+}
