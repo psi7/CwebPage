@@ -25,7 +25,7 @@
         var i;
         var name, band_name;
         for (i = 0; i < x.length; i++) {
-          //txt = txt + x.elements[i].value + "<br>";
+
           name=x.elements[0].value;
           band_name=x.elements[1].value;
         }

@@ -1,0 +1,1 @@
+This is the files for the Midterm-Coursework Page as well with the Javascript code of he page.
