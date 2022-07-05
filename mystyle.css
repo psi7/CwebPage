@@ -1,3 +1,6 @@
+body{
+  background-image: url('https://openai.com/content/images/2020/04/2x-no-mark-1.jpg')
+}
 form {
   /* Center the form on the page */
   margin: 0 auto;
@@ -13,7 +16,9 @@ form {
   background-color: blue;
   padding: 1em;
   position: relative;
-  top: 10%;
+  left: 20em;
+  bottom: 15em;
+  top: 5px;
 }
 ul {
   list-style: none;
@@ -23,8 +28,15 @@ ul {
 
 form li + li {
   margin-top: 1em;
+  color:yellow;
 }
-
+form table
+{
+  margin-top: 1em;
+  border-color: #000;
+  border: 2px solid #07140d;
+  border-radius:3em;
+}
 label {
   /* Uniform size & alignment */
   display: inline-block;
@@ -32,6 +44,19 @@ label {
   text-align: right;
 }
 
+input:focus,
+name:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
 
 .button {
   /* Align buttons with the text fields */
@@ -41,7 +66,7 @@ label {
 button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
-  margin-left: .5em;
+  margin-left: 2.5em;
 }  
 .siteheader
 {
@@ -76,5 +101,33 @@ color: whitesmoke;
 {
 position: fixed;
 right:0%;
+}
 
+.blob {
+	background: black;
+	border-radius: 50%;
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }

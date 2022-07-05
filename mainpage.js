@@ -1,34 +1,10 @@
-//const subButton= document.querySelector('mainform');
-//subButton.addEventListener("click",SubmitFunction());
-    document.addEventListener('DOMContentLoaded', () => {
+function SubmitFunction(){
+    var table = document.getElementById("FormTable"),
+    row = table.insertR;w(-1);
+    cell1 = row.insertCell(0);
+    cell2 = row.insertCell(1);
+    elements = document.getElementsByTagName("input");
+    cell1.innerHTML = elements[0].value;
+    cell2.innerHTML = elements[1].value;
+};
 
-        document.querySelector('form').onsubmit = () => {
-
-            // Create new item for list
-            const li = document.createElement('li');
-            li.innerHTML = document.getElementById("name").value;
-
-            // Add new item to task list
-            document.querySelector('#mainform').append(li);
-
-            // Clear input field
-            document.getElementById("name") = '';
-
-            // Stop form from submitting
-            //return false;
-        };
-
-    });
-    function SubmitFunction() {
-        var x = document.getElementById("mainform");
-        var txt = "";
-        var i;
-        var name, band_name;
-        for (i = 0; i < x.length; i++) {
-
-          name=x.elements[0].value;
-          band_name=x.elements[1].value;
-        }
-        console.alert(name);
-        console.alert(band_name);
-      }
